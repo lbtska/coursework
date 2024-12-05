@@ -1,2 +1,2 @@
 coursework
-https://lbtska.github.io/web/coursework/
+https://lbtska.github.io/coursework/coursework/
