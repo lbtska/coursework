@@ -11,31 +11,54 @@ body {
 }
 
 .intro {
-    margin bottom: 3.5%;
+    margin-bottom: 3.5%;
     text-align: center;
 }
-.container h1 { 
-text-align: center;
-margin-bottom: 1.5%;
-font-size: xx-large;
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 1.5%;
+    font-size: xx-large;
 }
 
-.services{ 
+.services {
     display: grid;
-    grid-template-columns: repeat; 
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     padding: 30px;
-} 
-
-.image-item {
-    text-align: center;
 }
 
-.image-item img {
-    justify-content: center; 
-    align-items: center; 
-    width: 20%;
-    height: 20%;
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-item img {
+    width: 40%;
+    height: auto;
+}
+
+.service-text {
+    padding-left: 20px;
+    width: 55%;
+}
+
+
+hr.divider {
+    border: 0;
+    height: 2px;
+    background-color: #77572d;
+    margin: 20px 0; 
+}
+
+.service-text h2 {
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+.service-text p {
+    font-size: 1.1em;
 }
 
 .caption {
@@ -46,10 +69,19 @@ font-size: xx-large;
     font-family: 'Edu AU VIC WA NT Pre', sans-serif;
 }
 
-
 @media screen and (max-width: 768px) {
-    .caption {
-        grid-template-columns: 1fr; 
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-item img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .service-text {
+        width: 80%;
     }
 }
 
@@ -74,7 +106,6 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.1em;
 }
-
 
 .hero {
     background-color: #f6e8e8;
@@ -111,7 +142,6 @@ nav ul li a {
     margin-top: 20px;
     font-size: 1em;
 }
-
 
 .registration {
     background-color: #e8f5f2;
@@ -165,7 +195,6 @@ nav ul li a {
     font-size: 1.2em;
     color: #2e8b57;
 }
-
 
 .footer {
     background-color: #77572d;
